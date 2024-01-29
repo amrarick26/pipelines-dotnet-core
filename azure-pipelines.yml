@@ -15,8 +15,8 @@ parameters:
   default: ''
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: echo ${{ parameters.Key }}
+  displayName: 'echo parameter value'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
